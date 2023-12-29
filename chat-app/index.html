@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("main-back.webp");
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 1.4rem;
+            color: white;
+            margin-bottom: 50px;
+        }
+        input{
+            height: 32px;
+            width: 40vh;
+            font-size: 17px;
+            padding-left: 10px;
+            border-radius: 20px;
+        }
+        button{
+            margin: 20px;
+            height: 32px;
+        border-radius: 20px;
+            width: 100px;
+            list-style: none;
+        }
+        a{
+
+        color: rgb(0, 0, 0);
+        font-size: larger;
+        
+        }
+    
+    h2{
+        font-size: 1.4rem;
+        color: white;
+        margin: 20px;
+        bottom: 10px;
+        
+        position: absolute;
+    }
+    .animate{
+        background-color: rgb(249, 174, 174);
+        animation-name: any ;
+        animation-duration: 0.5s ;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-timeline: 1s;
+        
+    }
+    @keyframes any {
+        0%{
+         
+            margin-left: -5px;
+            margin-right: 5px;
+        }
+        20%{
+            margin-left: 5px;
+            margin-right: -5px;
+        }
+        40%{
+            margin-left: -5px;
+            margin-right: 5px;
+        }
+        60%{
+            margin-left:5px;
+            margin-right: -5px;
+        }
+        80%{
+            margin-left: -5px;
+            margin-right: 5px;
+        }
+        100%{
+            margin-left: 5px;
+            margin-right: -5px;
+        }
+
+
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>chat with people</h1>
+        <input id="in" type="text" placeholder="Enter your name">
+        <button id="movebtn"><a id="anker" >Login</a></button>
+        <h2>power by codewithmohit</h2>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
